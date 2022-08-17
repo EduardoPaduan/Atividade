@@ -4,7 +4,7 @@ import java.util.concurrent.ForkJoinPool;
 public class Main {
     public static void main(String[] args) {
 
-        File caminho = new File("C:\\Program Files (x86)\\Steam");
+        File caminho = new File("C:\\Users\\Eduardo\\Downloads");
 
         double tempoInicio = System.currentTimeMillis();
         double tamanhoTotalConvencional = Convencional.calculaTamanhoConvencional(caminho);
