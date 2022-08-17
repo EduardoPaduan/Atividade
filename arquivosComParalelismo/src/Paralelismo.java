@@ -26,15 +26,13 @@ public class Paralelismo extends RecursiveTask<Long> {
         return null;
     }
 
-    private Collection<Paralelismo> geraSubtarefa(File[] arqs) {
+    private Collection<Paralelismo> geraSubtarefa(File[] pastas) {
 
-        List<Paralelismo> subtarefas = new ArrayList<>();
+        List<Paralelismo> listaTarefas = new ArrayList<>();
 
-        for(int i = 0; i < arqs.length; i++){
-            subtarefas.add(new Paralelismo(arqs[i]));
+        for(int i = 0; i < pastas.length; i++){
+            listaTarefas.add(new Paralelismo(pastas[i]));
         }
-        return subtarefas;
+        return listaTarefas;
     }
-
-
 }
